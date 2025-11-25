@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Terminal Of 25 Confessions</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="terminal" class="terminal" role="application" aria-label="Encrypted Love Terminal">
+    <div id="output" class="output" aria-live="polite">
+      <div class="line">Welcome to the <strong>Terminal Of 25 Confessions</strong>.</div>
+      <div class="line small">Happy Birthday — this is my gift to you.</div>
+      <div class="line">Type <span class="cmd">thanks</span> to receive your birthday note and begin.</div>
+      <div class="line">—</div>
+    </div>
+
+    <div class="input-line">
+      <span class="prompt">guest@love:~$</span>
+      <input id="input" autofocus autocomplete="off" spellcheck="false" />
+    </div>
+  </div>
+
+  <template id="tpl-line"><div class="line"><span class="prompt">guest@love:~$</span> <span class="cmdline"></span></div></template>
+  <script src="script.js"></script>
+</body>
+</html>

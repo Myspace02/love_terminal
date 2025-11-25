@@ -1,0 +1,25 @@
+:root{
+  --bg:#020617;
+  --text:#e6f0ff;
+  --accent:#00d1c1;
+  --muted:#97a3b3;
+  --mono: 'Lucida Console', Monaco, monospace;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:linear-gradient(180deg,#000814 0%,var(--bg) 100%);font-family:var(--mono);color:var(--text)}
+.terminal{max-width:900px;margin:40px auto;padding:20px;border-radius:8px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));box-shadow:0 10px 30px rgba(0,0,0,0.6);border:1px solid rgba(0,209,193,0.06)}
+.output{min-height:360px;max-height:60vh;overflow:auto;padding:12px;background:transparent;border-radius:6px}
+.line{padding:4px 0;white-space:pre-wrap;line-height:1.3}
+.prompt{color:var(--accent);margin-right:6px}
+.cmd{color:var(--accent);background:rgba(0,209,193,0.06);padding:2px 6px;border-radius:4px}
+.input-line{display:flex;padding:12px;border-top:1px solid rgba(255,255,255,0.03);align-items:center}
+#input{flex:1;background:transparent;border:0;outline:none;color:var(--text);font-family:var(--mono);font-size:16px;padding:6px}
+.notice{color:var(--muted);font-size:13px;margin-top:6px}
+.success{color:#8cf29e}
+.error{color:#ff9b9b}
+.small{font-size:13px;color:var(--muted)}
+.footer{margin-top:10px;color:var(--muted);font-size:13px;text-align:center}
+@media(max-width:600px){
+  .terminal{margin:10px;padding:12px}
+  .output{min-height:260px}
+}
